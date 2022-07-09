@@ -2,6 +2,48 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+   // Плавный скролл к пунктам ==========================================================
+   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+         e.preventDefault();
+         document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+         });
+      });
+   });
+   // Плавный скролл к пунктам ==========================================================
+
+
+   // Плавный скролл кнопки наверх  ====================================================
+   let btnUp = document.querySelector('.btn__up');
+
+   btnUp.addEventListener('click', function (e) {
+      scrollToY(0);
+   });
+
+   let scrolls = 0;
+   window.addEventListener('scroll', function (e) {
+      // console.log(++scrolls);
+      let pos = window.pageYOffset;
+
+      if (pos > window.innerHeight) {
+         btnUp.classList.add('btn__up-open');
+      }
+      else {
+         btnUp.classList.remove('btn__up-open');
+      }
+
+   });
+
+   function scrollToY(pos) {
+      window.scrollTo({
+         top: pos,
+         behavior: "smooth"
+      });
+   }
+   // Плавный скролл кнопки наверх  ====================================================
+
+
    //DYNAMIC ADAPT  start ===================================================================================
    // Dynamic Adapt v.1
    // HTML data-da="where(uniq class name),when(breakpoint),position(digi)"
