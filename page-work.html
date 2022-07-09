@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Metadesign-source</title>
+   <title>Мои работы</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
 
    <div class="wrapper">
       <div class="btn__up">&uarr;</div>
-      <header class="header" id="home">
+      <header class="header page-work__header" id="home">
          <div class="wrapper-container">
             <div class="header__inner">
                <div class="header__top">
@@ -33,7 +33,7 @@
                         <nav class="menu">
                            <ul class="menu__list">
                               <li class="menu__list-item">
-                                 <a class="menu__list-link" href="#">
+                                 <a class="menu__list-link" href="index.html">
                                     главная
                                  </a>
                               </li>
@@ -66,30 +66,10 @@
                <div class="header__content">
                   <div class="container">
                      <div class="header__content-inner">
-                        <div class="header__content-info">
-                           <p class="header__content-description">
-                              Новокузнецкий художник-дизайнер
-                              плазменной резки металла
-                           </p>
-                           <h1 class="header__title">
-                              Ирина
-                              Ничинская
-                           </h1>
-                           <div class="author-box">
-                              <p class="authors__works">
-                                 Авторские произведения
-                                 из металла
-                              </p>
-                              <div class="components__btn-box author__btn-box">
-                                 <a class="components__btn  authors__works-btn" href="#"
-                                    data-da=".header__content-inner,767,last">
-                                    Купить работы
-                                 </a>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="header__content-pictures">
-                           <img class="header__content-img" src="images/user-photo.png" alt="">
+                        <div class="header__content-info page-work__content-info">
+                           <h2 class="page-work__title">
+                              Мои работы
+                           </h2>
                         </div>
                      </div>
                   </div>
@@ -100,29 +80,63 @@
 
       <main class="main">
 
-         <section class="works" id="works">
+         <div class="works page-work__section " id="works">
             <div class="wrapper-container">
                <div class="container">
                   <div class="works__inner">
-                     <div class="section__title-box works__title-box">
-                        <h3 class="section__title">
-                           Мои работы
-                        </h3>
-                     </div>
                      <div class="section-content__container   works__conten-containert">
                         <img class="works-container__line" src="images/work-line-bg.svg" alt="">
                         <img class="works-container__line" src="images/work-line-bg.svg" alt="">
                         <img class="works-container__line" src="images/work-line-bg.svg" alt="">
                         <img class="works-container__line" src="images/work-line-bg.svg" alt="">
                         <img class="works-container__line" src="images/work-line-bg.svg" alt="">
-                        <ul class="works__items">
-                           <li class="works__item">
+                        <div class="page-work__menu-wrapper">
+                           <nav class="page-work__menu">
+                              <ul class="work__menu">
+                                 <li class="work__menu-item">
+                                    <a class="work__menu-link" href="#">
+                                       Категории
+                                    </a>
+                                 </li>
+                                 <li class="work__menu-item">
+                                    <a class="work__menu-link" href="#">
+                                       Пано
+                                    </a>
+                                 </li>
+                                 <li class="work__menu-item">
+                                    <a class="work__menu-link" href="#">
+                                       Камины
+                                    </a>
+                                 </li>
+                                 <li class="work__menu-item">
+                                    <a class="work__menu-link" href="#">
+                                       Арт-объекты
+                                    </a>
+                                 </li>
+                                 <li class="work__menu-item">
+                                    <a class="work__menu-link" href="#">
+                                       Очаги
+                                    </a>
+                                 </li>
+                              </ul>
+                           </nav>
+                        </div>
+
+
+
+
+
+                        <ul class="works__items page-work__items ">
+
+
+
+                           <li class="works__item page-work__item">
                               <div class="item-card__body">
                                  <div class="works__item-card">
                                     <div class="works__item-card-inner">
                                        <div class="item-card__pictures">
                                           <div class="works__btns-box">
-                                             <a class="works__btn-more" href="page-work.html">Подробнее</a>
+                                             <a class="works__btn-more" href="#">Подробнее</a>
                                              <button type="button" class="works__btn-sale">Купить</button>
                                           </div>
                                           <img class="item-card__img" src="images/works-2.jpg" alt="">
@@ -139,13 +153,13 @@
                                  </div>
                               </div>
                            </li>
-                           <li class="works__item">
+                           <li class="works__item page-work__item">
                               <div class="item-card__body">
                                  <div class="works__item-card">
                                     <div class="works__item-card-inner">
                                        <div class="item-card__pictures">
                                           <div class="works__btns-box">
-                                             <a class="works__btn-more" href="page-work.html">Подробнее</a>
+                                             <a class="works__btn-more" href="#">Подробнее</a>
                                              <button type="button" class="works__btn-sale">Купить</button>
                                           </div>
                                           <img class="item-card__img" src="images/works-1.jpg" alt="">
@@ -162,13 +176,13 @@
                                  </div>
                               </div>
                            </li>
-                           <li class="works__item">
+                           <li class="works__item page-work__item">
                               <div class="item-card__body">
                                  <div class="works__item-card">
                                     <div class="works__item-card-inner">
                                        <div class="item-card__pictures">
                                           <div class="works__btns-box">
-                                             <a class="works__btn-more" href="page-work.html">Подробнее</a>
+                                             <a class="works__btn-more" href="#">Подробнее</a>
                                              <button type="button" class="works__btn-sale">Купить</button>
                                           </div>
                                           <img class="item-card__img" src="images/works-3.jpg" alt="">
@@ -185,13 +199,13 @@
                                  </div>
                               </div>
                            </li>
-                           <li class="works__item">
+                           <li class="works__item page-work__item">
                               <div class="item-card__body">
                                  <div class="works__item-card">
                                     <div class="works__item-card-inner">
                                        <div class="item-card__pictures">
                                           <div class="works__btns-box">
-                                             <a class="works__btn-more" href="page-work.html">Подробнее</a>
+                                             <a class="works__btn-more" href="#">Подробнее</a>
                                              <button type="button" class="works__btn-sale">Купить</button>
                                           </div>
                                           <img class="item-card__img" src="images/works-4.jpg" alt="">
@@ -208,13 +222,13 @@
                                  </div>
                               </div>
                            </li>
-                           <li class="works__item">
+                           <li class="works__item page-work__item">
                               <div class="item-card__body">
                                  <div class="works__item-card">
                                     <div class="works__item-card-inner">
                                        <div class="item-card__pictures">
                                           <div class="works__btns-box">
-                                             <a class="works__btn-more" href="page-work.html">Подробнее</a>
+                                             <a class="works__btn-more" href="#">Подробнее</a>
                                              <button type="button" class="works__btn-sale">Купить</button>
                                           </div>
                                           <img class="item-card__img" src="images/works-5.jpg" alt="">
@@ -231,13 +245,13 @@
                                  </div>
                               </div>
                            </li>
-                           <li class="works__item">
+                           <li class="works__item page-work__item">
                               <div class="item-card__body">
                                  <div class="works__item-card">
                                     <div class="works__item-card-inner">
                                        <div class="item-card__pictures">
                                           <div class="works__btns-box">
-                                             <a class="works__btn-more" href="page-work.html">Подробнее</a>
+                                             <a class="works__btn-more" href="#">Подробнее</a>
                                              <button type="button" class="works__btn-sale">Купить</button>
                                           </div>
                                           <img class="item-card__img" src="images/works-6.jpg" alt="">
@@ -254,17 +268,196 @@
                                  </div>
                               </div>
                            </li>
+                           <li class="works__item page-work__item">
+                              <div class="item-card__body">
+                                 <div class="works__item-card">
+                                    <div class="works__item-card-inner">
+                                       <div class="item-card__pictures">
+                                          <div class="works__btns-box">
+                                             <a class="works__btn-more" href="#">Подробнее</a>
+                                             <button type="button" class="works__btn-sale">Купить</button>
+                                          </div>
+                                          <img class="item-card__img" src="images/works-2.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="item-card__info">
+                                       <p class="item-card__title">
+                                          Название работы
+                                       </p>
+                                       <p class="item-card__price">
+                                          125 000 ₽
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="works__item page-work__item">
+                              <div class="item-card__body">
+                                 <div class="works__item-card">
+                                    <div class="works__item-card-inner">
+                                       <div class="item-card__pictures">
+                                          <div class="works__btns-box">
+                                             <a class="works__btn-more" href="#">Подробнее</a>
+                                             <button type="button" class="works__btn-sale">Купить</button>
+                                          </div>
+                                          <img class="item-card__img" src="images/works-1.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="item-card__info">
+                                       <p class="item-card__title">
+                                          Название работы
+                                       </p>
+                                       <p class="item-card__price">
+                                          50 000 ₽
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="works__item page-work__item">
+                              <div class="item-card__body">
+                                 <div class="works__item-card">
+                                    <div class="works__item-card-inner">
+                                       <div class="item-card__pictures">
+                                          <div class="works__btns-box">
+                                             <a class="works__btn-more" href="#">Подробнее</a>
+                                             <button type="button" class="works__btn-sale">Купить</button>
+                                          </div>
+                                          <img class="item-card__img" src="images/works-3.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="item-card__info">
+                                       <p class="item-card__title">
+                                          Название работы
+                                       </p>
+                                       <p class="item-card__price">
+                                          16 500 ₽
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="works__item page-work__item">
+                              <div class="item-card__body">
+                                 <div class="works__item-card">
+                                    <div class="works__item-card-inner">
+                                       <div class="item-card__pictures">
+                                          <div class="works__btns-box">
+                                             <a class="works__btn-more" href="#">Подробнее</a>
+                                             <button type="button" class="works__btn-sale">Купить</button>
+                                          </div>
+                                          <img class="item-card__img" src="images/works-4.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="item-card__info">
+                                       <p class="item-card__title">
+                                          Название работы
+                                       </p>
+                                       <p class="item-card__price">
+                                          3 000 ₽
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="works__item page-work__item">
+                              <div class="item-card__body">
+                                 <div class="works__item-card">
+                                    <div class="works__item-card-inner">
+                                       <div class="item-card__pictures">
+                                          <div class="works__btns-box">
+                                             <a class="works__btn-more" href="#">Подробнее</a>
+                                             <button type="button" class="works__btn-sale">Купить</button>
+                                          </div>
+                                          <img class="item-card__img" src="images/works-5.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="item-card__info">
+                                       <p class="item-card__title">
+                                          Название работы
+                                       </p>
+                                       <p class="item-card__price">
+                                          25 000 ₽
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="works__item page-work__item">
+                              <div class="item-card__body">
+                                 <div class="works__item-card">
+                                    <div class="works__item-card-inner">
+                                       <div class="item-card__pictures">
+                                          <div class="works__btns-box">
+                                             <a class="works__btn-more" href="#">Подробнее</a>
+                                             <button type="button" class="works__btn-sale">Купить</button>
+                                          </div>
+                                          <img class="item-card__img" src="images/works-6.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="item-card__info">
+                                       <p class="item-card__title">
+                                          Название работы
+                                       </p>
+                                       <p class="item-card__price">
+                                          99 000 ₽
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="works__item page-work__item">
+                              <div class="item-card__body">
+                                 <div class="works__item-card">
+                                    <div class="works__item-card-inner">
+                                       <div class="item-card__pictures">
+                                          <div class="works__btns-box">
+                                             <a class="works__btn-more" href="#">Подробнее</a>
+                                             <button type="button" class="works__btn-sale">Купить</button>
+                                          </div>
+                                          <img class="item-card__img" src="images/works-2.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="item-card__info">
+                                       <p class="item-card__title">
+                                          Название работы
+                                       </p>
+                                       <p class="item-card__price">
+                                          125 000 ₽
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="works__item page-work__item">
+                              <div class="item-card__body">
+                                 <div class="works__item-card">
+                                    <div class="works__item-card-inner">
+                                       <div class="item-card__pictures">
+                                          <div class="works__btns-box">
+                                             <a class="works__btn-more" href="#">Подробнее</a>
+                                             <button type="button" class="works__btn-sale">Купить</button>
+                                          </div>
+                                          <img class="item-card__img" src="images/works-1.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="item-card__info">
+                                       <p class="item-card__title">
+                                          Название работы
+                                       </p>
+                                       <p class="item-card__price">
+                                          50 000 ₽
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
                         </ul>
-                     </div>
-                     <div class="components__btn-box   works-components__btn-box">
-                        <a class="components__btn  works__btn" href="page-work.html">
-                           Смотреть все работы
-                        </a>
                      </div>
                   </div>
                </div>
             </div>
-         </section>
+         </div>
 
          <section class="unique-project">
             <div class="wrapper-container">
@@ -290,171 +483,6 @@
             </div>
          </section>
 
-         <section class="commercial-projects">
-            <img class="commercial-projects__line" src="images/work-line-bg.svg" alt="">
-            <img class="commercial-projects__line" src="images/work-line-bg.svg" alt="">
-            <img class="commercial-projects__line" src="images/line-vertical-7.svg" alt="">
-            <img class="commercial-projects__line" src="images/work-line-bg.svg" alt="">
-            <img class="commercial-projects__line" src="images/work-line-bg.svg" alt="">
-            <img class="commercial-projects__line" src="images/work-line-bg.svg" alt="">
-            <div class="wrapper-container">
-               <div class="container">
-                  <div class="commercial-projects__inner">
-                     <div class="section__title-box commercial-projects__title-box">
-                        <h3 class="section__title   commercial-projects__title">
-                           Коммерческие проекты
-                        </h3>
-                     </div>
-                     <div class="section-content__container   commercial-projects__conten-containert">
-                        <div class="commercial-projects__content">
-                           <div class="commercial-projects__pictures">
-                              <img class="commercial-projects__img" src="images/commercial-projects-img.jpg" alt="">
-                           </div>
-                           <div class="commercial-projects__info">
-                              <p class="projects__title">
-                                 Название экспозиции
-                              </p>
-                              <p class="projects__data">
-                                 Срок реализации — 25 дней
-                              </p>
-                              <p class="projects__text">
-                                 Текст описания проекта. Коротко, пару строк, что бы
-                                 понять суть. А в подробнее можно описать задачу ...
-                              </p>
-                              <a class="projects__btn" href="#">
-                                 Подробнее
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-
-         <section class="about" id="about">
-            <div class="wrapper-container">
-               <div class="container">
-                  <div class="about__body">
-                     <div class="about__inner">
-                        <div class="about__info">
-                           <div class="section__title-box about__title-box">
-                              <h3 class="section__title about__title">
-                                 Обо мне
-                              </h3>
-                           </div>
-                           <p class="about__text">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                              ut
-                              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                           </p>
-                           <div class="components__btn-box about__btn-box ">
-                              <a class="components__btn  about__btn" href="#" data-da=".about__body,767,last">
-                                 Подробнее
-                              </a>
-                           </div>
-                        </div>
-                        <div class="about__images">
-                           <img class="about__img" src="images/about-img.png" alt="">
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-
-         <section class="publication" id="publication">
-            <div class="wrapper-container">
-               <div class="publication-container__inner">
-                  <img class="publication__vertical-line" src="images/line-vertical-6.svg" alt="">
-                  <img class="publication__vertical-line" src="images/line-vertical-6.svg" alt="">
-                  <img class="publication__vertical-line" src="images/line-vertical-7.svg" alt="">
-                  <img class="publication__vertical-line" src="images/line-vertical-9.svg" alt="">
-                  <img class="publication__vertical-line" src="images/line-vertical-10.svg" alt="">
-                  <div class="container">
-                     <div class="publication__inner">
-                        <div class="section__title-box publication__title-box">
-                           <h3 class="section__title   publication__title ">
-                              Публикации
-                           </h3>
-                        </div>
-                        <div class="section-content__container   publication__conten-containert">
-                           <ul class="publication__items">
-                              <li class="publication__item">
-                                 <a class="publication__item-inner" href="#">
-                                    <div class="publication__item-body">
-                                       <div class="publication__pictures">
-                                          <img class="publication__img" src="images/publication-img-1.jpg" alt="">
-                                       </div>
-                                       <div class="publication__content">
-                                          <p class="publication__item-title">
-                                             Загаловок
-                                          </p>
-                                          <p class="publication__text">
-                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                             tempor
-                                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                                          </p>
-                                       </div>
-                                    </div>
-                                 </a>
-                              </li>
-                              <li class="publication__item">
-                                 <a class="publication__item-inner" href="#">
-                                    <div class="publication__item-body">
-                                       <div class="publication__pictures">
-                                          <img class="publication__img" src="images/publication-img-2.jpg" alt="">
-                                       </div>
-                                       <div class="publication__content">
-                                          <p class="publication__item-title">
-                                             Загаловок
-                                          </p>
-                                          <p class="publication__text">
-                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                             tempor
-                                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                                          </p>
-                                       </div>
-                                    </div>
-                                 </a>
-                              </li>
-                              <li class="publication__item">
-                                 <a class="publication__item-inner" href="#">
-                                    <div class="publication__item-body">
-                                       <div class="publication__pictures">
-                                          <img class="publication__img" src="images/publication-img-3.jpg" alt="">
-                                       </div>
-                                       <div class="publication__content">
-                                          <p class="publication__item-title">
-                                             Загаловок
-                                          </p>
-                                          <p class="publication__text">
-                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                             tempor
-                                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                                          </p>
-                                       </div>
-                                    </div>
-                                 </a>
-                              </li>
-                           </ul>
-                           <div class="components__btn-box  publication__btn-box">
-                              <a class="components__btn  publication__btn" href="#">
-                                 Смотреть еще
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-
-
-
          <!-- <section>
             <button class="publication__btn-box">
                <div class="video">
@@ -464,8 +492,6 @@
                </div>
             </button>
          </section> -->
-
-
 
       </main>
 
