@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Обо мне</title>
+   <title>Обо мне 789</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@600&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -290,8 +291,29 @@
             </div>
          </section>
 
-      </main>
 
+         <div class="overlay">
+            <div class="pop__up">
+               <div class="pop__up-body">
+                  <button class="close__btn">X</button>
+                  <div class="pop__up-content">
+                     <p class="pop__up-title">Купить работу</p>
+                     <form action="#" class="page-contacts__form pop__up-form">
+                        <input class="input__name" type="text" placeholder="ФИО">
+                        <input type="tel" class="input__phone" type="text" placeholder="Номер телефона">
+                        <input type="email" class="input__mail" type="text" placeholder="E-mail">
+                        <p class="confidentiality-policy">
+                           Нажимая на кнопку “Купить”, я принимаю условия и положения,
+                           а также политику конфиденциальности
+                        </p>
+                        <button type="submit" class="components__btn  submit__btn-pop-up">Купить</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </main>
 
       <footer class="footer">
          <div class="wrapper-container">
@@ -393,6 +415,7 @@
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
    <script src="js/main.min.js"></script>
 </body>
 

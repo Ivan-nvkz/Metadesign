@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
    btnsSales.forEach(elem => {
       elem.addEventListener('click', function () {
          overlay.classList.add('overlay--active');
-         console.log(789);
+
       });
    });
 
