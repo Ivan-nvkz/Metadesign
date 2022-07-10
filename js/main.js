@@ -2,6 +2,49 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+
+
+   // sale  ============================================================================
+
+   const btnsSales = document.querySelectorAll(".btns-sale__all");
+   const overlay = document.querySelector(".overlay");
+   const closeBtn = document.querySelector(".close__btn");
+
+   btnsSales.forEach(elem => {
+      elem.addEventListener('click', function () {
+         overlay.classList.add('overlay--active');
+         console.log(789);
+      });
+   });
+
+   closeBtn.addEventListener('click', function () {
+      overlay.classList.remove('overlay--active');
+
+   });
+
+   // sale  ============================================================================
+
+   // slider ============================================================================
+
+   var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+   });
+   var swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+         swiper: swiper,
+      },
+   });
+
+   // slider ============================================================================
+
    // Плавный скролл к пунктам ==========================================================
    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {

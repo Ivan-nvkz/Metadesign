@@ -13,6 +13,7 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@600&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -38,22 +39,22 @@
                                  </a>
                               </li>
                               <li class="menu__list-item">
-                                 <a class="menu__list-link" href="#about">
+                                 <a class="menu__list-link" href="page-about.html">
                                     Обо мне
                                  </a>
                               </li>
                               <li class="menu__list-item">
-                                 <a class="menu__list-link" href="#works">
+                                 <a class="menu__list-link" href="page-work.html">
                                     Мои работы
                                  </a>
                               </li>
                               <li class="menu__list-item">
-                                 <a class="menu__list-link" href="#publication">
+                                 <a class="menu__list-link" href="page-publications.html">
                                     Публикации
                                  </a>
                               </li>
                               <li class="menu__list-item">
-                                 <a class="menu__list-link" href="#">
+                                 <a class="menu__list-link" href="page-contacts.html">
                                     Контакты
                                  </a>
                               </li>
@@ -67,7 +68,7 @@
                   <div class="container">
                      <div class="header__content-inner">
                         <div class="header__content-info page-work__content-info">
-                           <h2 class="page-work__title">
+                           <h2 class="page-work__title  page-work-card__title">
                               Мои работы
                            </h2>
                         </div>
@@ -82,7 +83,7 @@
 
 
 
-         <div class="works work__card" id="works">
+         <div class="works page-work__card" id="works">
             <div class="wrapper-container">
                <div class="container">
                   <div class="work-card__inner">
@@ -92,35 +93,111 @@
                         <img class="works-container__line" src="images/work-line-bg.svg" alt="">
                         <img class="works-container__line" src="images/work-line-bg.svg" alt="">
                         <img class="works-container__line" src="images/work-line-bg.svg" alt="">
-
                         <div class="work-card__pages">
+                           <div class="page-work__inner">
+                              <div class="page-work__slider">
+                                 <div class="swiper mySwiper2">
+                                    <div class="swiper-wrapper">
+                                       <div class="swiper-slide">
+                                          <img class="slider__big-img" src="images/work-card-img-big.jpg" alt="" />
+                                       </div>
+                                       <div class="swiper-slide">
+                                          <img class="slider__big-img" src="images/work-card-img-big.jpg" alt="" />
+                                       </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                 </div>
+                                 <div thumbsSlider="" class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
 
-                           карточка
-
-
+                                       <div class="swiper-slide small-slide">
+                                          <img class="slider__small-img" src="images/work-card-img-small-1.jpg"
+                                             alt="" />
+                                       </div>
+                                       <div class="swiper-slide small-slide">
+                                          <img class="slider__small-img" src="images/work-card-img-small-2.jpg"
+                                             alt="" />
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="page-work__content">
+                                 <div class="page-work__content-inner">
+                                    <p class="page-work__content-title">
+                                       Название работы
+                                    </p>
+                                    <p class="page-work__content-price">
+                                       50 000 ₽
+                                    </p>
+                                    <div class="page-work__content-size-box">
+                                       <p class="page-work__content-size">
+                                          Размер: 40 х 30 см
+                                       </p>
+                                       <p class="page-work__content-material">
+                                          Материал: сталь
+                                       </p>
+                                       <p class="page-work__content-year">
+                                          Год создания: 2022
+                                       </p>
+                                    </div>
+                                    <div class="page-work__content-text">
+                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                       nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                       fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                       culpa qui officia deserunt mollit anim id est laborum
+                                    </div>
+                                    <button type="button" class="components__btn  page-work__card-btn btns-sale__all">
+                                       Купить
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-
-
-
-
-
                      </div>
                   </div>
                </div>
             </div>
          </div>
-
-         <!-- <section>
-            <button class="publication__btn-box">
-               <div class="video">
-                  <a data-fancybox class="video__link" href="https://youtu.be/5bo51sL8Fr4">
-                     <img src="images/icons/video.svg" alt="video" class="video-img">
-                  </a>
-               </div>
-            </button>
-         </section> -->
-
       </main>
+
+
+
+
+
+      <div class="overlay">
+         <div class="pop__up">
+            <div class="pop__up-body">
+               <button class="close__btn">X</button>
+               <div class="pop__up-content">
+                  <p class="pop__up-title">Купить работу</p>
+                  <form action="#" class="page-contacts__form pop__up-form">
+                     <input class="input__name" type="text" placeholder="ФИО">
+                     <input type="tel" class="input__phone" type="text" placeholder="Номер телефона">
+                     <input type="email" class="input__mail" type="text" placeholder="E-mail">
+
+
+                     <p class="confidentiality-policy">
+                        Нажимая на кнопку “Купить”, я принимаю условия и положения,
+                        а также политику конфиденциальности
+                     </p>
+                     <button type="submit" class="components__btn  submit__btn-pop-up">Купить</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+
+
+
+
+
+
 
 
       <footer class="footer">
@@ -147,13 +224,14 @@
                         <nav class="footer__menu">
                            <ul class="footer__menu-list">
                               <li class="menu__item-left">
-                                 <a class="footer__menu-link menu__list-link" href="#home">Главная</a>
-                                 <a class="footer__menu-link menu__list-link" href="#about">Обо мне</a>
-                                 <a class="footer__menu-link menu__list-link" href="#works">Мои работы</a>
+                                 <a class="footer__menu-link menu__list-link" href="index.html">Главная</a>
+                                 <a class="footer__menu-link menu__list-link" href="page-about.html">Обо мне</a>
+                                 <a class="footer__menu-link menu__list-link" href="page-work.html">Мои работы</a>
                               </li>
                               <li class="menu__item-right">
-                                 <a class="footer__menu-link menu__list-link" href="#publication">Публикации</a>
-                                 <a class="footer__menu-link menu__list-link" href="#">Контакты</a>
+                                 <a class="footer__menu-link menu__list-link"
+                                    href="page-publications.html">Публикации</a>
+                                 <a class="footer__menu-link menu__list-link" href="page-contacts.html">Контакты</a>
                               </li>
                            </ul>
                         </nav>
@@ -216,12 +294,16 @@
       </footer>
 
 
+
+
+
    </div>
 
 
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
    <script src="js/main.min.js"></script>
 </body>
 
