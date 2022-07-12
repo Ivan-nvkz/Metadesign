@@ -2,28 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-   // Изменение цвета пункта меню при клике  ==============================================
 
-   // const colorRed = document.querySelector(".menu__list-link--color");
-   // const menuColorchangeBtns = document.querySelectorAll(".menu__list-link");
-
-
-   // menuColorchangeBtns.forEach(elem => {
-
-   //    elem.addEventListener('click', function () {
-   //       elem.preventDefault();
-   //       // elem.classList.add('colorRed ');
-   //       console.log(789);
-   //    });
-   // });
-
-
-
-
-
-
-   // console.log(colorRed);
-   // Изменение цвета пункта меню при клике  ==============================================
 
    // sale  ============================================================================
 
