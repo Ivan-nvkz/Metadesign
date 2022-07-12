@@ -34,22 +34,22 @@
                         <nav class="menu">
                            <ul class="menu__list">
                               <li class="menu__list-item">
-                                 <a class="menu__list-link" href="index.html">
+                                 <a class="menu__list-link menu__list-link--color" href="index.html">
                                     главная
                                  </a>
                               </li>
                               <li class="menu__list-item">
-                                 <a class="menu__list-link" href="#about">
+                                 <a class="menu__list-link" href="page-about.html">
                                     Обо мне
                                  </a>
                               </li>
                               <li class="menu__list-item">
-                                 <a class="menu__list-link" href="#works">
+                                 <a class="menu__list-link" href="page-work.html">
                                     Мои работы
                                  </a>
                               </li>
                               <li class="menu__list-item">
-                                 <a class="menu__list-link" href="#publication">
+                                 <a class="menu__list-link" href="page-publications.html">
                                     Публикации
                                  </a>
                               </li>
@@ -82,10 +82,6 @@
                                  из металла
                               </p>
                               <div class="components__btn-box author__btn-box">
-                                 <!-- <a class="components__btn  authors__works-btn" href="#"
-                                    data-da=".header__content-inner,767,last">
-                                    Купить работы
-                                 </a> -->
                                  <button type="button" class="components__btn  authors__works-btn btns-sale__all"
                                     data-da=".header__content-inner,767,last">
                                     Купить работы
@@ -94,7 +90,9 @@
                            </div>
                         </div>
                         <div class="header__content-pictures">
-                           <img class="header__content-img" src="images/user-photo.png" alt="">
+                           <div class="img__container">
+                              <img class="header__content-img" src="images/user-photo.png" alt="">
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -109,17 +107,17 @@
             <div class="wrapper-container">
                <div class="container">
                   <div class="works__inner">
-                     <div class="section__title-box works__title-box">
-                        <h3 class="section__title">
-                           Мои работы
-                        </h3>
-                     </div>
                      <div class="section-content__container   works__conten-containert">
-                        <img class="works-container__line" src="images/work-line-bg.svg" alt="">
-                        <img class="works-container__line" src="images/work-line-bg.svg" alt="">
-                        <img class="works-container__line" src="images/work-line-bg.svg" alt="">
-                        <img class="works-container__line" src="images/work-line-bg.svg" alt="">
-                        <img class="works-container__line" src="images/work-line-bg.svg" alt="">
+                        <div class="section__title-box works__title-box">
+                           <h3 class="section__title   works-section__title ">
+                              Мои работы
+                           </h3>
+                        </div>
+                        <img class="works-container__line" src="images/work-line-bg-1.svg" alt="">
+                        <img class="works-container__line" src="images/work-line-bg-2.svg" alt="">
+                        <img class="works-container__line" src="images/work-line-bg-3.svg" alt="">
+                        <img class="works-container__line" src="images/work-line-bg-4.svg" alt="">
+                        <img class="works-container__line" src="images/work-line-bg-5.svg" alt="">
                         <ul class="works__items">
                            <li class="works__item">
                               <div class="item-card__body">
@@ -364,7 +362,7 @@
                            </p>
                            <div class="components__btn-box about__btn-box ">
                               <a class="components__btn  about__btn" href="page-about.html"
-                                 data-da=".about__body,767,last">
+                                 data-da=".about__body,768,last">
                                  Подробнее
                               </a>
                            </div>
@@ -464,8 +462,6 @@
                </div>
             </div>
          </section>
-
-
 
          <div class="overlay">
             <div class="pop__up">
