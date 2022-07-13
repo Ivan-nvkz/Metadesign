@@ -2,8 +2,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-
-
    // sale  ============================================================================
 
    const btnsSales = document.querySelectorAll(".btns-sale__all");
@@ -27,10 +25,25 @@ document.addEventListener('DOMContentLoaded', () => {
    // slider ============================================================================
 
    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
+
       slidesPerView: 4,
       freeMode: true,
       watchSlidesProgress: true,
+
+      breakpoints: {
+         320: {
+            spaceBetween: 10
+         },
+         400: {
+            spaceBetween: 30
+         },
+         1920: {
+            spaceBetween: 30
+         },
+      }
+
+
+
    });
    var swiper2 = new Swiper(".mySwiper2", {
       spaceBetween: 10,
@@ -42,6 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
          swiper: swiper,
       },
    });
+
+
+
 
    // slider ============================================================================
 
@@ -86,15 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
    }
    // Плавный скролл кнопки наверх  ====================================================
 
-
    //DYNAMIC ADAPT  start ===================================================================================
-   // Dynamic Adapt v.1
-   // HTML data-da="where(uniq class name),when(breakpoint),position(digi)"
-   // e.x. data-da=".item,992,2"
-   // Andrikanych Yevhen 2020
-   // https://www.youtube.com/c/freelancerlifestyle
-
-   // "use strict";
 
    function DynamicAdapt(type) {
       this.type = type;
